@@ -1,0 +1,1161 @@
+#define _ARMA_
+
+class CfgPatches
+{
+	class adfrc_tweaks
+	{
+		units[]=
+		{};
+		weapons[]=
+		{};
+		requiredVersion=1;
+		requiredAddons[]=
+		{
+			"adfrc_vests",
+			"adfrc_helmets"
+		};
+	};
+};
+
+	class cfgWeapons
+	{
+		class VestItem;
+		class HeadgearItem;
+		class ItemCore;
+		class ADFRC_Exfil;
+		// Armour values OP AF, tweaked below
+		class ADFRC_Peacekeeper_Mk5_MC
+		{
+			class ItemInfo: VestItem
+			{
+				containerClass = "Supply160";
+				class HitpointsProtectionInfo
+				{
+					class Chest
+					{
+						HitpointName = "HitChest";
+						armor = 0;
+						PassThrough = 1;
+					};
+					class Diaphragm
+					{
+						HitpointName = "HitDiaphragm";
+						armor = 0;
+						PassThrough = 1;
+					};
+					class Abdomen
+					{
+						HitpointName = "HitAbdomen";
+						armor = 2;
+						passThrough = 0.9;
+					};
+					class Body
+					{
+						hitpointName = "HitBody";
+						armor = 0;
+						passThrough = 1;
+					};
+				};
+			};
+		};
+		class ADFRC_Peacekeeper_Mk5_Tan
+		{
+			class ItemInfo: VestItem
+			{
+				class HitpointsProtectionInfo
+				{
+					class Chest
+					{
+						HitpointName = "HitChest";
+						armor = 0;
+						PassThrough = 1;
+					};
+					class Diaphragm
+					{
+						HitpointName = "HitDiaphragm";
+						armor = 0;
+						PassThrough = 1;
+					};
+					class Abdomen
+					{
+						HitpointName = "HitAbdomen";
+						armor = 2;
+						passThrough = 0.9;
+					};
+					class Body
+					{
+						hitpointName = "HitBody";
+						armor = 0;
+						passThrough = 1;
+					};
+				};
+			};
+		};
+		class ADFRC_JPC_Operator
+		{
+			class ItemInfo: VestItem
+			{
+				class HitpointsProtectionInfo
+				{
+					class Chest
+					{
+						HitpointName = "HitChest";
+						armor = 20;
+						PassThrough = 0.2;
+					};
+					class Diaphragm
+					{
+						HitpointName = "HitDiaphragm";
+						armor = 20;
+						PassThrough = 0.2;
+					};
+					class Abdomen
+					{
+						HitpointName = "HitAbdomen";
+						armor = 20;
+						passThrough = 0.2;
+					};
+					class Body
+					{
+						hitpointName = "HitBody";
+						armor = 20;
+						passThrough = 0.2;
+					};
+				};
+			};
+		};
+		class ADFRC_TBAS_T2_DMR
+		{
+			class ItemInfo: VestItem
+			{
+				class HitpointsProtectionInfo
+				{
+					class Chest
+					{
+						HitpointName = "HitChest";
+						armor = 20;
+						PassThrough = 0.2;
+					};
+					class Diaphragm
+					{
+						HitpointName = "HitDiaphragm";
+						armor = 20;
+						PassThrough = 0.2;
+					};
+					class Abdomen
+					{
+						HitpointName = "HitAbdomen";
+						armor = 20;
+						passThrough = 0.2;
+					};
+					class Body
+					{
+						hitpointName = "HitBody";
+						armor = 20;
+						passThrough = 0.2;
+					};
+				};
+			};
+		};
+		class ADFRC_TBAS_T2_Eng
+		{
+			class ItemInfo: VestItem
+			{
+				class HitpointsProtectionInfo
+				{
+					class Chest
+					{
+						HitpointName = "HitChest";
+						armor = 20;
+						PassThrough = 0.2;
+					};
+					class Diaphragm
+					{
+						HitpointName = "HitDiaphragm";
+						armor = 20;
+						PassThrough = 0.2;
+					};
+					class Abdomen
+					{
+						HitpointName = "HitAbdomen";
+						armor = 20;
+						passThrough = 0.2;
+					};
+					class Body
+					{
+						hitpointName = "HitBody";
+						armor = 20;
+						passThrough = 0.2;
+					};
+				};
+			};
+		};
+		class ADFRC_TBAS_T2_Gren
+		{
+			class ItemInfo: VestItem
+			{
+				class HitpointsProtectionInfo
+				{
+					class Chest
+					{
+						HitpointName = "HitChest";
+						armor = 20;
+						PassThrough = 0.2;
+					};
+					class Diaphragm
+					{
+						HitpointName = "HitDiaphragm";
+						armor = 20;
+						PassThrough = 0.2;
+					};
+					class Abdomen
+					{
+						HitpointName = "HitAbdomen";
+						armor = 20;
+						passThrough = 0.2;
+					};
+					class Body
+					{
+						hitpointName = "HitBody";
+						armor = 20;
+						passThrough = 0.2;
+					};
+				};
+			};
+		};
+		class ADFRC_TBAS_T2_LMG
+		{
+			class ItemInfo: VestItem
+			{
+				class HitpointsProtectionInfo
+				{
+					class Chest
+					{
+						HitpointName = "HitChest";
+						armor = 20;
+						PassThrough = 0.2;
+					};
+					class Diaphragm
+					{
+						HitpointName = "HitDiaphragm";
+						armor = 20;
+						PassThrough = 0.2;
+					};
+					class Abdomen
+					{
+						HitpointName = "HitAbdomen";
+						armor = 20;
+						passThrough = 0.2;
+					};
+					class Body
+					{
+						hitpointName = "HitBody";
+						armor = 20;
+						passThrough = 0.2;
+					};
+				};
+			};
+		};
+		class ADFRC_TBAS_T2_Medic
+		{
+			class ItemInfo: VestItem
+			{
+				class HitpointsProtectionInfo
+				{
+					class Chest
+					{
+						HitpointName = "HitChest";
+						armor = 20;
+						PassThrough = 0.2;
+					};
+					class Diaphragm
+					{
+						HitpointName = "HitDiaphragm";
+						armor = 20;
+						PassThrough = 0.2;
+					};
+					class Abdomen
+					{
+						HitpointName = "HitAbdomen";
+						armor = 20;
+						passThrough = 0.2;
+					};
+					class Body
+					{
+						hitpointName = "HitBody";
+						armor = 20;
+						passThrough = 0.2;
+					};
+				};
+			};
+		};
+		class ADFRC_TBAS_T2_Officer
+		{
+			class ItemInfo: VestItem
+			{
+				class HitpointsProtectionInfo
+				{
+					class Chest
+					{
+						HitpointName = "HitChest";
+						armor = 20;
+						PassThrough = 0.2;
+					};
+					class Diaphragm
+					{
+						HitpointName = "HitDiaphragm";
+						armor = 20;
+						PassThrough = 0.2;
+					};
+					class Abdomen
+					{
+						HitpointName = "HitAbdomen";
+						armor = 20;
+						passThrough = 0.2;
+					};
+					class Body
+					{
+						hitpointName = "HitBody";
+						armor = 20;
+						passThrough = 0.2;
+					};
+				};
+			};
+		};
+		class ADFRC_TBAS_T2_Rifleman
+		{
+			class ItemInfo: VestItem
+			{
+				class HitpointsProtectionInfo
+				{
+					class Chest
+					{
+						HitpointName = "HitChest";
+						armor = 20;
+						PassThrough = 0.2;
+					};
+					class Diaphragm
+					{
+						HitpointName = "HitDiaphragm";
+						armor = 20;
+						PassThrough = 0.2;
+					};
+					class Abdomen
+					{
+						HitpointName = "HitAbdomen";
+						armor = 20;
+						passThrough = 0.2;
+					};
+					class Body
+					{
+						hitpointName = "HitBody";
+						armor = 20;
+						passThrough = 0.2;
+					};
+				};
+			};
+		};
+		class ADFRC_TBAS_T2_Rifleman_Light
+		{
+			class ItemInfo: VestItem
+			{
+				class HitpointsProtectionInfo
+				{
+					class Chest
+					{
+						HitpointName = "HitChest";
+						armor = 20;
+						PassThrough = 0.2;
+					};
+					class Diaphragm
+					{
+						HitpointName = "HitDiaphragm";
+						armor = 20;
+						PassThrough = 0.2;
+					};
+					class Abdomen
+					{
+						HitpointName = "HitAbdomen";
+						armor = 20;
+						passThrough = 0.2;
+					};
+					class Body
+					{
+						hitpointName = "HitBody";
+						armor = 20;
+						passThrough = 0.2;
+					};
+				};
+			};
+		};
+		class ADFRC_TBAS_T2_Rifleman_Pistol
+		{
+			class ItemInfo: VestItem
+			{
+				class HitpointsProtectionInfo
+				{
+					class Chest
+					{
+						HitpointName = "HitChest";
+						armor = 20;
+						PassThrough = 0.2;
+					};
+					class Diaphragm
+					{
+						HitpointName = "HitDiaphragm";
+						armor = 20;
+						PassThrough = 0.2;
+					};
+					class Abdomen
+					{
+						HitpointName = "HitAbdomen";
+						armor = 20;
+						passThrough = 0.2;
+					};
+					class Body
+					{
+						hitpointName = "HitBody";
+						armor = 20;
+						passThrough = 0.2;
+					};
+				};
+			};
+		};
+		class ADFRC_TBAS_T2_Scout
+		{
+			class ItemInfo: VestItem
+			{
+				class HitpointsProtectionInfo
+				{
+					class Chest
+					{
+						HitpointName = "HitChest";
+						armor = 20;
+						PassThrough = 0.2;
+					};
+					class Diaphragm
+					{
+						HitpointName = "HitDiaphragm";
+						armor = 20;
+						PassThrough = 0.2;
+					};
+					class Abdomen
+					{
+						HitpointName = "HitAbdomen";
+						armor = 20;
+						passThrough = 0.2;
+					};
+					class Body
+					{
+						hitpointName = "HitBody";
+						armor = 20;
+						passThrough = 0.2;
+					};
+				};
+			};
+		};
+		class ADFRC_TBAS_T2_SECO
+		{
+			class ItemInfo: VestItem
+			{
+				class HitpointsProtectionInfo
+				{
+					class Chest
+					{
+						HitpointName = "HitChest";
+						armor = 20;
+						PassThrough = 0.2;
+					};
+					class Diaphragm
+					{
+						HitpointName = "HitDiaphragm";
+						armor = 20;
+						PassThrough = 0.2;
+					};
+					class Abdomen
+					{
+						HitpointName = "HitAbdomen";
+						armor = 20;
+						passThrough = 0.2;
+					};
+					class Body
+					{
+						hitpointName = "HitBody";
+						armor = 20;
+						passThrough = 0.2;
+					};
+				};
+			};
+		};
+		class ADFRC_TBAS_T2_TL
+		{
+			class ItemInfo: VestItem
+			{
+				class HitpointsProtectionInfo
+				{
+					class Chest
+					{
+						HitpointName = "HitChest";
+						armor = 20;
+						PassThrough = 0.2;
+					};
+					class Diaphragm
+					{
+						HitpointName = "HitDiaphragm";
+						armor = 20;
+						PassThrough = 0.2;
+					};
+					class Abdomen
+					{
+						HitpointName = "HitAbdomen";
+						armor = 20;
+						passThrough = 0.2;
+					};
+					class Body
+					{
+						hitpointName = "HitBody";
+						armor = 20;
+						passThrough = 0.2;
+					};
+				};
+			};
+		};
+		class ADFRC_TBAS_T5_Breacher
+		{
+			class ItemInfo: VestItem
+			{
+				class HitpointsProtectionInfo
+				{
+					class Chest
+					{
+						HitpointName = "HitChest";
+						armor = 20;
+						PassThrough = 0.2;
+					};
+					class Diaphragm
+					{
+						HitpointName = "HitDiaphragm";
+						armor = 20;
+						PassThrough = 0.2;
+					};
+					class Abdomen
+					{
+						HitpointName = "HitAbdomen";
+						armor = 20;
+						passThrough = 0.2;
+					};
+					class Body
+					{
+						hitpointName = "HitBody";
+						armor = 20;
+						passThrough = 0.2;
+					};
+				};
+			};
+		};
+		class ADFRC_TBAS_T5_CFA
+		{
+			class ItemInfo: VestItem
+			{
+				class HitpointsProtectionInfo
+				{
+					class Chest
+					{
+						HitpointName = "HitChest";
+						armor = 20;
+						PassThrough = 0.2;
+					};
+					class Diaphragm
+					{
+						HitpointName = "HitDiaphragm";
+						armor = 20;
+						PassThrough = 0.2;
+					};
+					class Abdomen
+					{
+						HitpointName = "HitAbdomen";
+						armor = 20;
+						passThrough = 0.2;
+					};
+					class Body
+					{
+						hitpointName = "HitBody";
+						armor = 20;
+						passThrough = 0.2;
+					};
+				};
+			};
+		};
+		class ADFRC_TBAS_T5_Commando_CQB
+		{
+			class ItemInfo: VestItem
+			{
+				class HitpointsProtectionInfo
+				{
+					class Chest
+					{
+						HitpointName = "HitChest";
+						armor = 20;
+						PassThrough = 0.2;
+					};
+					class Diaphragm
+					{
+						HitpointName = "HitDiaphragm";
+						armor = 20;
+						PassThrough = 0.2;
+					};
+					class Abdomen
+					{
+						HitpointName = "HitAbdomen";
+						armor = 20;
+						passThrough = 0.2;
+					};
+					class Body
+					{
+						hitpointName = "HitBody";
+						armor = 20;
+						passThrough = 0.2;
+					};
+				};
+			};
+		};
+		class ADFRC_TBAS_T5_Eng
+		{
+			class ItemInfo: VestItem
+			{
+				class HitpointsProtectionInfo
+				{
+					class Chest
+					{
+						HitpointName = "HitChest";
+						armor = 20;
+						PassThrough = 0.2;
+					};
+					class Diaphragm
+					{
+						HitpointName = "HitDiaphragm";
+						armor = 20;
+						PassThrough = 0.2;
+					};
+					class Abdomen
+					{
+						HitpointName = "HitAbdomen";
+						armor = 20;
+						passThrough = 0.2;
+					};
+					class Body
+					{
+						hitpointName = "HitBody";
+						armor = 20;
+						passThrough = 0.2;
+					};
+				};
+			};
+		};
+		class ADFRC_TBAS_T5_LMG
+		{
+			class ItemInfo: VestItem
+			{
+				class HitpointsProtectionInfo
+				{
+					class Chest
+					{
+						HitpointName = "HitChest";
+						armor = 20;
+						PassThrough = 0.2;
+					};
+					class Diaphragm
+					{
+						HitpointName = "HitDiaphragm";
+						armor = 20;
+						PassThrough = 0.2;
+					};
+					class Abdomen
+					{
+						HitpointName = "HitAbdomen";
+						armor = 20;
+						passThrough = 0.2;
+					};
+					class Body
+					{
+						hitpointName = "HitBody";
+						armor = 20;
+						passThrough = 0.2;
+					};
+				};
+			};
+		};
+		class ADFRC_TBAS_T5_Operator
+		{
+			class ItemInfo: VestItem
+			{
+				class HitpointsProtectionInfo
+				{
+					class Chest
+					{
+						HitpointName = "HitChest";
+						armor = 20;
+						PassThrough = 0.2;
+					};
+					class Diaphragm
+					{
+						HitpointName = "HitDiaphragm";
+						armor = 20;
+						PassThrough = 0.2;
+					};
+					class Abdomen
+					{
+						HitpointName = "HitAbdomen";
+						armor = 20;
+						passThrough = 0.2;
+					};
+					class Body
+					{
+						hitpointName = "HitBody";
+						armor = 20;
+						passThrough = 0.2;
+					};
+				};
+			};
+		};
+		class ADFRC_TBAS_T5_PatrolCom
+		{
+			class ItemInfo: VestItem
+			{
+				class HitpointsProtectionInfo
+				{
+					class Chest
+					{
+						HitpointName = "HitChest";
+						armor = 20;
+						PassThrough = 0.2;
+					};
+					class Diaphragm
+					{
+						HitpointName = "HitDiaphragm";
+						armor = 20;
+						PassThrough = 0.2;
+					};
+					class Abdomen
+					{
+						HitpointName = "HitAbdomen";
+						armor = 20;
+						passThrough = 0.2;
+					};
+					class Body
+					{
+						hitpointName = "HitBody";
+						armor = 20;
+						passThrough = 0.2;
+					};
+				};
+			};
+		};
+		class ADFRC_TBAS_T5_TL
+		{
+			class ItemInfo: VestItem
+			{
+				class HitpointsProtectionInfo
+				{
+					class Chest
+					{
+						HitpointName = "HitChest";
+						armor = 20;
+						PassThrough = 0.2;
+					};
+					class Diaphragm
+					{
+						HitpointName = "HitDiaphragm";
+						armor = 20;
+						PassThrough = 0.2;
+					};
+					class Abdomen
+					{
+						HitpointName = "HitAbdomen";
+						armor = 20;
+						passThrough = 0.2;
+					};
+					class Body
+					{
+						hitpointName = "HitBody";
+						armor = 20;
+						passThrough = 0.2;
+					};
+				};
+			};
+		};
+		// Armour values and ACE HP OP, tweaked
+		class adfrc_opscore_airframe_1: ItemCore
+		{
+			ace_hearing_protection = 0.8;
+			ace_hearing_hasEHP = 1;
+			class ItemInfo: HeadgearItem
+			{
+				class HitpointsProtectionInfo
+				{
+					class Head
+					{
+						hitPointName = "HitHead";
+						armor = 6;
+						passThrough = 0.5;
+					};
+				};
+			};
+		};
+		class adfrc_opscore_airframe_2: ItemCore
+		{
+			ace_hearing_protection = 0.8;
+			ace_hearing_hasEHP = 1;
+			class ItemInfo: HeadgearItem
+			{
+				class HitpointsProtectionInfo
+				{
+					class Head
+					{
+						hitPointName = "HitHead";
+						armor = 6;
+						passThrough = 0.5;
+					};
+				};
+			};
+		};
+		class adfrc_opscore_airframe_3: ItemCore
+		{
+			ace_hearing_protection = 0.8;
+			ace_hearing_hasEHP = 1;
+			class ItemInfo: HeadgearItem
+			{
+				class HitpointsProtectionInfo
+				{
+					class Head
+					{
+						hitPointName = "HitHead";
+						armor = 6;
+						passThrough = 0.5;
+					};
+				};
+			};
+		};
+		// ACE HP a little powerful, tweaked
+		class adfrc_boonie: ItemCore
+		{
+			ace_hearing_protection = 0.8;
+			ace_hearing_hasEHP = 1;
+		};
+		// No ACE EHP, added
+		class adfrc_teamwendy_exfil_g2_cover: ItemCore
+		{
+			ace_hearing_protection = 0.8;
+			ace_hearing_hasEHP = 1;
+		};
+		class ADFRC_Exfil_AMPS_Cover_PatchLR: ADFRC_Exfil
+		{
+			ace_hearing_protection = 0.8;
+			ace_hearing_hasEHP = 1;
+		};
+		class ADFRC_Exfil_AMPS_Cover_PatchLR_Battery: ADFRC_Exfil
+		{
+			ace_hearing_protection = 0.8;
+			ace_hearing_hasEHP = 1;
+		};
+		class ADFRC_Exfil_AMPS_Cover_PatchLR_Battery_Scrim: ADFRC_Exfil
+		{
+			ace_hearing_protection = 0.8;
+			ace_hearing_hasEHP = 1;
+		};
+		class ADFRC_Exfil_AMPS_Cover_PatchLR_Helstar: ADFRC_Exfil
+		{
+			ace_hearing_protection = 0.8;
+			ace_hearing_hasEHP = 1;
+		};
+		class ADFRC_Exfil_AMPS_Cover_PatchLR_Helstar_Battery: ADFRC_Exfil
+		{
+			ace_hearing_protection = 0.8;
+			ace_hearing_hasEHP = 1;
+		};
+		class ADFRC_Exfil_AMPS_Cover_PatchLR_Helstar_Battery_Scrim: ADFRC_Exfil
+		{
+			ace_hearing_protection = 0.8;
+			ace_hearing_hasEHP = 1;
+		};
+		class ADFRC_Exfil_AMPS_Cover_PatchLR_Helstar_Scrim: ADFRC_Exfil
+		{
+			ace_hearing_protection = 0.8;
+			ace_hearing_hasEHP = 1;
+		};
+		class ADFRC_Exfil_AMPS_Cover_PatchLR_Scrim: ADFRC_Exfil
+		{
+			ace_hearing_protection = 0.8;
+			ace_hearing_hasEHP = 1;
+		};
+		class ADFRC_Exfil_Comtac6_Cover_PatchLR: ADFRC_Exfil
+		{
+			ace_hearing_protection = 0.8;
+			ace_hearing_hasEHP = 1;
+		};
+		class ADFRC_Exfil_Comtac6_Cover_PatchLR_Battery: ADFRC_Exfil
+		{
+			ace_hearing_protection = 0.8;
+			ace_hearing_hasEHP = 1;
+		};
+		class ADFRC_Exfil_Comtac6_Cover_PatchLR_Battery_Scrim: ADFRC_Exfil
+		{
+			ace_hearing_protection = 0.8;
+			ace_hearing_hasEHP = 1;
+		};
+		class ADFRC_Exfil_Comtac6_Cover_PatchLR_Helstar: ADFRC_Exfil
+		{
+			ace_hearing_protection = 0.8;
+			ace_hearing_hasEHP = 1;
+		};
+		class ADFRC_Exfil_Comtac6_Cover_PatchLR_Helstar_Battery: ADFRC_Exfil
+		{
+			ace_hearing_protection = 0.8;
+			ace_hearing_hasEHP = 1;
+		};
+		class ADFRC_Exfil_Comtac6_Cover_PatchLR_Helstar_Battery_Scrim: ADFRC_Exfil
+		{
+			ace_hearing_protection = 0.8;
+			ace_hearing_hasEHP = 1;
+		};
+		class ADFRC_Exfil_Comtac6_Cover_PatchLR_Helstar_Scrim: ADFRC_Exfil
+		{
+			ace_hearing_protection = 0.8;
+			ace_hearing_hasEHP = 1;
+		};
+		class ADFRC_Exfil_Comtac6_Cover_PatchLR_Scrim: ADFRC_Exfil
+		{
+			ace_hearing_protection = 0.8;
+			ace_hearing_hasEHP = 1;
+		};
+		class ADFRC_Exfil_AMPS: ADFRC_Exfil
+		{
+			ace_hearing_protection = 0.8;
+			ace_hearing_hasEHP = 1;
+		};
+		class ADFRC_Exfil_AMPS_Battery: ADFRC_Exfil
+		{
+			ace_hearing_protection = 0.8;
+			ace_hearing_hasEHP = 1;
+		};
+		class ADFRC_Exfil_AMPS_Helstar: ADFRC_Exfil
+		{
+			ace_hearing_protection = 0.8;
+			ace_hearing_hasEHP = 1;
+		};
+		class ADFRC_Exfil_AMPS_Helstar_Battery: ADFRC_Exfil
+		{
+			ace_hearing_protection = 0.8;
+			ace_hearing_hasEHP = 1;
+		};
+		class ADFRC_Exfil_Comtac6: ADFRC_Exfil
+		{
+			ace_hearing_protection = 0.8;
+			ace_hearing_hasEHP = 1;
+		};
+		class ADFRC_Exfil_Comtac6_Battery: ADFRC_Exfil
+		{
+			ace_hearing_protection = 0.8;
+			ace_hearing_hasEHP = 1;
+		};
+		class ADFRC_Exfil_Comtac6_Helstar: ADFRC_Exfil
+		{
+			ace_hearing_protection = 0.8;
+			ace_hearing_hasEHP = 1;
+		};
+		class ADFRC_Exfil_Comtac6_Helstar_Battery: ADFRC_Exfil
+		{
+			ace_hearing_protection = 0.8;
+			ace_hearing_hasEHP = 1;
+		};
+		class ADRC_Gentex_CVC_Tan_F1: ItemCore
+		{
+			ace_hearing_protection = 0.8;
+			ace_hearing_hasEHP = 1;
+		};
+		class ADRC_Gentex_CVC_Olive_F1: ADRC_Gentex_CVC_Tan_F1
+		{
+			ace_hearing_protection = 0.8;
+			ace_hearing_hasEHP = 1;
+		};
+		class ADRC_Gentex_CVC_Olive_F2: ADRC_Gentex_CVC_Tan_F1
+		{
+			ace_hearing_protection = 0.8;
+			ace_hearing_hasEHP = 1;
+		};
+		class ADRC_Gentex_CVC_Tan_F2: ADRC_Gentex_CVC_Tan_F1
+		{
+			ace_hearing_protection = 0.8;
+			ace_hearing_hasEHP = 1;
+		};
+		class ADRC_Gentex_CVC_Olive_M9: ADRC_Gentex_CVC_Tan_F1
+		{
+			ace_hearing_protection = 0.8;
+			ace_hearing_hasEHP = 1;
+		};
+		class ADRC_Gentex_CVC_Tan_M9: ADRC_Gentex_CVC_Tan_F1
+		{
+			ace_hearing_protection = 0.8;
+			ace_hearing_hasEHP = 1;
+		};
+		class adfrc_opscore_fast_xp: ItemCore
+		{
+			ace_hearing_protection = 0.8;
+			ace_hearing_hasEHP = 1;
+		};
+		class adfrc_opscore_marine_amcu_1_Aus: ItemCore
+		{
+			ace_hearing_protection = 0.8;
+			ace_hearing_hasEHP = 1;
+		};
+		class adfrc_opscore_marine_Snakeskin_amcu_amp_1_Aus: ItemCore
+		{
+			ace_hearing_protection = 0.8;
+			ace_hearing_hasEHP = 1;
+		};
+		class adfrc_opscore_marine_Snakeskin_amcu_Ct_1_Aus: ItemCore
+		{
+			ace_hearing_protection = 0.8;
+			ace_hearing_hasEHP = 1;
+		};
+		class adfrc_opscore_marine_Snakeskin_amcu_amp_2_Aus: ItemCore
+		{
+			ace_hearing_protection = 0.8;
+			ace_hearing_hasEHP = 1;
+		};
+		class adfrc_opscore_marine_Snakeskin_amcu_ct_2_Aus: ItemCore
+		{
+			ace_hearing_protection = 0.8;
+			ace_hearing_hasEHP = 1;
+		};
+		class adfrc_opscore_marine_Snakeskin_amcu_amp_3_Aus: ItemCore
+		{
+			ace_hearing_protection = 0.8;
+			ace_hearing_hasEHP = 1;
+		};
+		class adfrc_opscore_marine_Snakeskin_amcu_ct_3_Aus: ItemCore
+		{
+			ace_hearing_protection = 0.8;
+			ace_hearing_hasEHP = 1;
+		};
+		class adfrc_opscore_marine_Snakeskin_amcu_amp_4_Aus: ItemCore
+		{
+			ace_hearing_protection = 0.8;
+			ace_hearing_hasEHP = 1;
+		};
+		class adfrc_opscore_marine_Snakeskin_amcu_ct_4_Aus: ItemCore
+		{
+			ace_hearing_protection = 0.8;
+			ace_hearing_hasEHP = 1;
+		};
+		class adfrc_opscore_marine_Snakeskin_amcu_amp_5_Aus: ItemCore
+		{
+			ace_hearing_protection = 0.8;
+			ace_hearing_hasEHP = 1;
+		};
+		class adfrc_opscore_marine_Snakeskin_amcu_ct_5_Aus: ItemCore
+		{
+			ace_hearing_protection = 0.8;
+			ace_hearing_hasEHP = 1;
+		};
+		class adfrc_opscore_marine_Snakeskin_blk_amp_1_Aus: ItemCore
+		{
+			ace_hearing_protection = 0.8;
+			ace_hearing_hasEHP = 1;
+		};
+		class adfrc_opscore_marine_Snakeskin_blk_Ct_1_Aus: ItemCore
+		{
+			ace_hearing_protection = 0.8;
+			ace_hearing_hasEHP = 1;
+		};
+		class adfrc_opscore_marine_Snakeskin_blk_amp_2_Aus: ItemCore
+		{
+			ace_hearing_protection = 0.8;
+			ace_hearing_hasEHP = 1;
+		};
+		class adfrc_opscore_marine_Snakeskin_blk_ct_2_Aus: ItemCore
+		{
+			ace_hearing_protection = 0.8;
+			ace_hearing_hasEHP = 1;
+		};
+		class adfrc_opscore_marine_Snakeskin_blk_amp_3_Aus: ItemCore
+		{
+			ace_hearing_protection = 0.8;
+			ace_hearing_hasEHP = 1;
+		};
+		class adfrc_opscore_marine_Snakeskin_blk_ct_3_Aus: ItemCore
+		{
+			ace_hearing_protection = 0.8;
+			ace_hearing_hasEHP = 1;
+		};
+		class adfrc_opscore_marine_Snakeskin_blk_amp_4_Aus: ItemCore
+		{
+			ace_hearing_protection = 0.8;
+			ace_hearing_hasEHP = 1;
+		};
+		class adfrc_opscore_marine_Snakeskin_blk_ct_4_Aus: ItemCore
+		{
+			ace_hearing_protection = 0.8;
+			ace_hearing_hasEHP = 1;
+		};
+		class adfrc_opscore_marine_Snakeskin_blk_amp_5_Aus: ItemCore
+		{
+			ace_hearing_protection = 0.8;
+			ace_hearing_hasEHP = 1;
+		};
+		class adfrc_opscore_marine_Snakeskin_blk_ct_5_Aus: ItemCore
+		{
+			ace_hearing_protection = 0.8;
+			ace_hearing_hasEHP = 1;
+		};
+		class adfrc_opscore_marine_Snakeskin_Tan_amp_1_Aus: ItemCore
+		{
+			ace_hearing_protection = 0.8;
+			ace_hearing_hasEHP = 1;
+		};
+		class adfrc_opscore_marine_Snakeskin_Tan_Ct_1_Aus: ItemCore
+		{
+			ace_hearing_protection = 0.8;
+			ace_hearing_hasEHP = 1;
+		};
+		class adfrc_opscore_marine_Snakeskin_Tan_Amp_2_Aus: ItemCore
+		{
+			ace_hearing_protection = 0.8;
+			ace_hearing_hasEHP = 1;
+		};
+		class adfrc_opscore_marine_Snakeskin_Tan_ct_2_Aus: ItemCore
+		{
+			ace_hearing_protection = 0.8;
+			ace_hearing_hasEHP = 1;
+		};
+		class adfrc_opscore_marine_Snakeskin_Tan_Amp_3_Aus: ItemCore
+		{
+			ace_hearing_protection = 0.8;
+			ace_hearing_hasEHP = 1;
+		};
+		class adfrc_opscore_marine_Snakeskin_Tan_ct_3_Aus: ItemCore
+		{
+			ace_hearing_protection = 0.8;
+			ace_hearing_hasEHP = 1;
+		};
+		class adfrc_opscore_marine_Snakeskin_Tan_Amp_4_Aus: ItemCore
+		{
+			ace_hearing_protection = 0.8;
+			ace_hearing_hasEHP = 1;
+		};
+		class adfrc_opscore_marine_Snakeskin_Tan_ct_4_Aus: ItemCore
+		{
+			ace_hearing_protection = 0.8;
+			ace_hearing_hasEHP = 1;
+		};
+		class adfrc_opscore_marine_Snakeskin_Tan_Amp_5_Aus: ItemCore
+		{
+			ace_hearing_protection = 0.8;
+			ace_hearing_hasEHP = 1;
+		};
+		class adfrc_opscore_marine_Snakeskin_Tan_ct_5_Aus: ItemCore
+		{
+			ace_hearing_protection = 0.8;
+			ace_hearing_hasEHP = 1;
+		};
+	};
